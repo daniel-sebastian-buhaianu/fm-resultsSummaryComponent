@@ -1,3 +1,6 @@
+/* Primary Colors */
+/* Gradient Colors */
+/* Neutral Colors */
 html {
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 18px;
@@ -8,16 +11,25 @@ main {
   padding: 1.5rem;
 }
 
-.card .result {
+.card {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.card .result,
+.card .summary {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 285px;
+}
+.card .result {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1rem;
   border-radius: 0 0 1rem 1rem;
-  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  color: hsl(241, 100%, 89%);
+  background-image: linear-gradient(#7857ff, #2e2be9);
+  color: #c8c7ff;
 }
 .card .result > * {
   margin-bottom: 1.5rem;
@@ -31,12 +43,12 @@ main {
 .card .result > div:first-of-type {
   padding: 1.5rem 2rem;
   border-radius: 100%;
-  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  background-image: linear-gradient(#4e21ca, #2421ca);
 }
 .card .result > div:first-of-type h2 {
   font-size: 3rem;
   font-weight: 800;
-  color: hsl(0, 0%, 100%);
+  color: #ffffff;
 }
 .card .result > div:first-of-type p {
   color: hsla(241.1, 100%, 89%, 0.5);
@@ -45,7 +57,7 @@ main {
   margin-top: 0.5rem;
 }
 .card .result > div:last-of-type h3 {
-  color: hsl(0, 0%, 100%);
+  color: #ffffff;
   font-weight: 700;
   font-size: 1.4rem;
   margin-bottom: 0.75rem;
@@ -53,6 +65,73 @@ main {
 .card .result > div:last-of-type p {
   font-size: 0.9rem;
   line-height: 1.2;
+}
+.card .summary {
+  font-weight: 700;
+}
+.card .summary > p {
+  color: #303b5a;
+  margin-bottom: 1rem;
+}
+.card .summary li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+.card .summary li:first-child {
+  background-color: rgba(255, 87, 87, 0.05);
+}
+.card .summary li:first-child > div:first-of-type {
+  color: #ff5757;
+}
+.card .summary li:nth-child(2) {
+  background-color: rgba(255, 176, 31, 0.05);
+}
+.card .summary li:nth-child(2) > div:first-of-type {
+  color: #ffb01f;
+}
+.card .summary li:nth-child(3) {
+  background-color: rgba(0, 189, 145, 0.05);
+}
+.card .summary li:nth-child(3) > div:first-of-type {
+  color: #00bd91;
+}
+.card .summary li:last-child {
+  background-color: rgba(17, 37, 212, 0.05);
+}
+.card .summary li:last-child > div:first-of-type {
+  color: #1125d4;
+}
+.card .summary li > div:first-of-type {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+.card .summary li > div:first-of-type > img {
+  margin-right: 0.75rem;
+}
+.card .summary li > div:last-of-type span {
+  color: #9c9c9c;
+}
+.card .summary li > div:last-of-type span:first-of-type {
+  color: #303b5a;
+}
+.card .summary button {
+  background-color: #303b5a;
+  color: #ffffff;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 0;
+  border-radius: 2rem;
+}
+.card .summary button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(#7857ff, #2e2be9);
 }
 
 /*# sourceMappingURL=style.css.map */
