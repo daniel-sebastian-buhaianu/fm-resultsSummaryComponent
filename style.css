@@ -1,0 +1,58 @@
+html {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+.card .result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: hsl(241, 100%, 89%);
+}
+.card .result > * {
+  margin-bottom: 1.5rem;
+}
+.card .result > *:last-child {
+  margin-bottom: 0;
+}
+.card .result > p {
+  font-weight: 700;
+}
+.card .result > div:first-of-type {
+  padding: 1.5rem 2rem;
+  border-radius: 100%;
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+}
+.card .result > div:first-of-type h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+}
+.card .result > div:first-of-type p {
+  color: hsla(241.1, 100%, 89%, 0.5);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+.card .result > div:last-of-type h3 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+.card .result > div:last-of-type p {
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+/*# sourceMappingURL=style.css.map */
